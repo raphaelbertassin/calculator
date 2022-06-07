@@ -10,6 +10,7 @@ exports.calculate = function(req, res) {
     res.json({ error: err.message });
   });
 
+  // Using + operator to type cast variables on the preceding line stating
   var operations = {
     'add':      function(a,b) { return +a + +b },
     'subtract': function(a,b) { return a - b },
